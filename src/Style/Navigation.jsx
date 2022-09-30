@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components'
 
-export const NavigationWrapper = styled.div`
-    background-color: ${({theme}) => theme.mode === 'light' ? theme.colors.primary : theme.colors.xdark};
-    color: ${({theme}) => theme.colors.light};
+export const NavBar = styled.div`
+    /* background-color: ${({theme}) => theme.mode === 'light' ? theme.colors.primary : theme.colors.xdark};
+    color: ${({theme}) => theme.colors.light}; */
 `
 export const Navigation = styled.nav`
     height: 70px;

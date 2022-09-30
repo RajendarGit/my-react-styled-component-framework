@@ -1,10 +1,10 @@
 import { Container } from '../Style/Container'
 import { Logo } from '../Style/Logo'
-import { Navigation, NavigationWrapper, NavItems, NavList } from '../Style/Navigation'
+import { Navigation, NavBar, NavItems, NavList } from '../Style/Navigation'
 
 export const Navbar = () => {
   return (
-    <NavigationWrapper>
+    <NavBar>
         <Container>
           <Navigation items>
             <Logo>Logo here</Logo>
@@ -16,6 +16,6 @@ export const Navbar = () => {
             </NavItems>
           </Navigation>
         </Container>
-    </NavigationWrapper>
+    </NavBar>
   )
 }
