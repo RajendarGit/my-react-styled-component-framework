@@ -18,6 +18,8 @@ export const theme = {
         warningHover: '#e67e22',
         danger: '#d63031',
         dangerHover: '#c0392b',
+        pink: '#e84393',
+        purple: '#6c5ce7',
     },
     fontWeights: {
         light: 200,

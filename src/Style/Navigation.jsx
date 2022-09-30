@@ -1,8 +1,20 @@
 import styled, { css } from 'styled-components'
 
 export const NavBar = styled.div`
-    /* background-color: ${({theme}) => theme.mode === 'light' ? theme.colors.primary : theme.colors.xdark};
-    color: ${({theme}) => theme.colors.light}; */
+    background-color: ${({theme}) => theme.colors.secondary};
+    color: ${({theme}) => theme.colors.light};
+    ${({primary}) => primary && css`
+        background-color: ${({theme}) => theme.colors.primary};
+    `}
+    ${({pink}) => pink && css`
+        background-color: ${({theme}) => theme.colors.pink};
+    `}
+    ${({purple}) => purple && css`
+        background-color: ${({theme}) => theme.colors.purple};
+    `}
+    ${({dark}) => dark && css`
+        background-color: ${({theme}) => theme.colors.xdark};
+    `}
 `
 export const Navigation = styled.nav`
     height: 70px;
@@ -47,6 +59,6 @@ export const NavItems = styled.div`
 export const NavList = styled.a`
     padding: .5rem 1rem;
     &:hover {
-        background-color: ${({theme}) => theme.mode === 'light' ? theme.colors.primary : theme.colors.dark};
+        /* background-color: ${({theme}) => theme.colors.secondaryHover}; */
     }
 `

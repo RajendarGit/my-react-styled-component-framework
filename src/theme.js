@@ -15,6 +15,7 @@ const theme = {
         body: 'Segeo UI',
     },
     colors: {
+        xdark: '#000000',
 		dark: '#333',
 		light: '#fff',
 		error: '#d0453e',

@@ -4,7 +4,7 @@ import { Navigation, NavBar, NavItems, NavList } from '../Style/Navigation'
 
 export const Navbar = () => {
   return (
-    <NavBar>
+    <NavBar primary>
         <Container>
           <Navigation items>
             <Logo>Logo here</Logo>
