@@ -6,6 +6,7 @@ import { Container } from '../Style/Container'
 import { Body1, Body2, Head1, Head4 } from '../Style/Typography'
 import { Button } from '../Style/Button'
 import { Dropdown, DropdownMenu, DropdownMenuLink } from '../Style/Dropdown'
+import { Card } from '../Style/Card'
 
 export const Hero = () => {
 
@@ -20,6 +21,11 @@ const showTextFunction = () => SetText(!text);
 
 const wrap = {
   transition: 'all .3s ease-out',
+}
+
+const style = {
+  display: 'flex',
+  gap: '.5rem',
 }
 
 const dropdownToggle = () => setShowDropDown(!showDropdown);
@@ -59,6 +65,29 @@ const dropdownToggle = () => setShowDropDown(!showDropdown);
               <DropdownMenuLink onClick={dropdownToggle}>List Three</DropdownMenuLink>
             </DropdownMenu>: null}
           </Dropdown>
+
+          <br/><br/>
+
+          <Box style={style}>
+              <Card lg>
+                <Head4>Helloo</Head4>
+                <Body2>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, accusamus distinctio facilis labore delectus sequi libero reprehenderit dolore ducimus vel omnis dolorum fugit nesciunt ex minima odio quidem aspernatur explicabo?
+                </Body2>
+              </Card>
+              <Card lg>
+                <Head4>Helloo</Head4>
+                <Body2>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, accusamus distinctio facilis labore delectus sequi libero reprehenderit dolore ducimus vel omnis dolorum fugit nesciunt ex minima odio quidem aspernatur explicabo?
+                </Body2>
+              </Card>
+              <Card lg>
+                <Head4>Helloo</Head4>
+                <Body2>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, accusamus distinctio facilis labore delectus sequi libero reprehenderit dolore ducimus vel omnis dolorum fugit nesciunt ex minima odio quidem aspernatur explicabo?
+                </Body2>
+              </Card>
+          </Box>
 
       </HeroSection>
     </Container>
