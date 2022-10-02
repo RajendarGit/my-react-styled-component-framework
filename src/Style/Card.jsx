@@ -2,7 +2,9 @@ import styled, { css } from "styled-components";
 
 export const Card = styled.div`
     width: 100%;
-    border: 1px solid ${({theme}) => theme.colors.secondary};
+    ${({styled}) => styled && css`
+        border: 1px solid ${({theme}) => theme.colors.secondary};
+    `}
     ${({sm}) => sm && css`
         padding: .3rem;
     `}
@@ -11,5 +13,21 @@ export const Card = styled.div`
     `}
     ${({lg}) => lg && css`
         padding: 1rem;
+    `}
+    ${({primary}) => primary && css`
+        background-color: ${({theme}) => theme.colors.primary};
+        border: 1px solid ${({theme}) => theme.colors.primary};
+    `}
+    ${({pink}) => pink && css`
+        background-color: ${({theme}) => theme.colors.pink};
+        border: 1px solid ${({theme}) => theme.colors.pink};
+    `}
+    ${({purple}) => purple && css`
+        background-color: ${({theme}) => theme.colors.purple};
+        border: 1px solid ${({theme}) => theme.colors.purple};
+    `}
+    ${({dark}) => dark && css`
+        background-color: ${({theme}) => theme.colors.xdark};
+        border: 1px solid ${({theme}) => theme.colors.xdark};
     `}
 `

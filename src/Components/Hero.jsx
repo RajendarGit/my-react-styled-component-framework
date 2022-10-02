@@ -69,19 +69,19 @@ const dropdownToggle = () => setShowDropDown(!showDropdown);
           <br/><br/>
 
           <Box style={style}>
-              <Card lg>
+              <Card lg dark>
                 <Head4>Helloo</Head4>
                 <Body2>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, accusamus distinctio facilis labore delectus sequi libero reprehenderit dolore ducimus vel omnis dolorum fugit nesciunt ex minima odio quidem aspernatur explicabo?
                 </Body2>
               </Card>
-              <Card lg>
+              <Card lg styled>
                 <Head4>Helloo</Head4>
                 <Body2>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, accusamus distinctio facilis labore delectus sequi libero reprehenderit dolore ducimus vel omnis dolorum fugit nesciunt ex minima odio quidem aspernatur explicabo?
                 </Body2>
               </Card>
-              <Card lg>
+              <Card lg styled>
                 <Head4>Helloo</Head4>
                 <Body2>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, accusamus distinctio facilis labore delectus sequi libero reprehenderit dolore ducimus vel omnis dolorum fugit nesciunt ex minima odio quidem aspernatur explicabo?

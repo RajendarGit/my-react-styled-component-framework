@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components"
 
 const baseThemeStyle = css`
-    color: ${({theme}) => theme.mode === 'light' ? theme.colors.dark : theme.colors.light};;
+    color: ${({theme}) => theme.mode === 'light' ? theme.colors.dark : theme.colors.light};
 `
 const baseHeadStyle = css`
     font-family: ${({theme}) => theme.font.head};

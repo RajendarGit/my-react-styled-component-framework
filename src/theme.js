@@ -16,8 +16,8 @@ const theme = {
     },
     colors: {
         xdark: '#000000',
-		dark: '#333',
-		light: '#fff',
+		dark: '#333333',
+		light: '#ffffff',
 		error: '#d0453e',
 		primary: '#0984e3',
         primaryHover: '#2980b9',
