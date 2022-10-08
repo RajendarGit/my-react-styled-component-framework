@@ -26,6 +26,9 @@ const baseThemeStyle = css`
     ${({color}) => color === 'default' && css`
         color: ${({theme}) => theme.colors.dark};
     `}
+    ${({color}) => color === 'white' && css`
+        color: ${({theme}) => theme.colors.light};
+    `}
     margin-top: 0;
     margin-bottom: 1rem;
 `

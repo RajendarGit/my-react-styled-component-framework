@@ -71,7 +71,7 @@ export const CardComponent = () => {
         <br/>
         <Card styled size="lg" variant="primary">
           <CardContent>
-            <Body1>
+            <Body1 color="white">
               <pre>primary</pre> variant for primary color card
             </Body1>
           </CardContent>
@@ -79,7 +79,7 @@ export const CardComponent = () => {
         <br/>
         <Card styled size="lg" variant="pink">
           <CardContent>
-            <Body1>
+            <Body1 color="white">
               <pre>pink</pre> variant for pink color card
             </Body1>
           </CardContent>
@@ -87,7 +87,7 @@ export const CardComponent = () => {
         <br/>
         <Card styled size="lg" variant="purple">
           <CardContent>
-            <Body1>
+            <Body1 color="white">
               <pre>purple</pre> variant for purple color card
             </Body1>
           </CardContent>
@@ -95,7 +95,7 @@ export const CardComponent = () => {
         <br/>
         <Card styled size="lg" variant="dark">
           <CardContent>
-            <Body1>
+            <Body1 color="white">
               <pre>dark</pre> variant for dark color card
             </Body1>
           </CardContent>

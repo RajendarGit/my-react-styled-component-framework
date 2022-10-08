@@ -2,8 +2,8 @@ import styled, { css } from "styled-components";
 
 export const Card = styled.div`
     width: 100%;
-    background-color: ${({theme}) => theme.colors.light};
-    color: ${({theme}) => theme.colors.dark};
+    background-color: ${({theme}) => theme.mode === 'dark' ? theme.colors.xdark : theme.colors.light};
+    color: ${({theme}) => theme.mode === 'light' ? theme.colors.dark : theme.colors.light};
     ${({styled}) => styled && css`
         border: 1px solid ${({theme}) => theme.colors.secondary};
     `}

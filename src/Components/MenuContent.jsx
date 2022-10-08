@@ -11,12 +11,6 @@ const SidebarLinkButton = styled(Button)`
   border: none;
   font-size: 1rem;
   padding: 1rem;
-  /* ${({color}) => color && css`
-    color: ${({theme}) => theme.colors.dark};
-  `}
-  ${({navmenu}) => navmenu && css`
-    color: ${({theme}) => theme.colors.light};
-  `} */
   cursor: pointer;
   &:hover {
     background-color: ${({theme}) => theme.colors.dark};
@@ -35,10 +29,10 @@ const margin = {
 export const MenuContent = ({open, setOpen, color, navmenu }) => {
   return (
     <>
-        <Link style={linkStyle} to="/"><SidebarLinkButton navmenu color onClick={(e) => setOpen(false)}><FiHome style={margin}/>Home</SidebarLinkButton></Link>
-        <Link style={linkStyle} to="/typography-component"><SidebarLinkButton color onClick={(e) => setOpen(false)}><FiType style={margin}/>Typography</SidebarLinkButton></Link>
-        <Link style={linkStyle} to="/button-component"><SidebarLinkButton color onClick={(e) => setOpen(false)}><FiAirplay style={margin}/>Button Component</SidebarLinkButton></Link>
-        <Link style={linkStyle} to="/card-component"><SidebarLinkButton color onClick={(e) => setOpen(false)}><FiCreditCard style={margin}/>Card Component</SidebarLinkButton></Link>
+        <Link style={linkStyle} to="/"><SidebarLinkButton onClick={(e) => setOpen(false)}><FiHome style={margin}/>Home</SidebarLinkButton></Link>
+        <Link style={linkStyle} to="/typography-component"><SidebarLinkButton onClick={(e) => setOpen(false)}><FiType style={margin}/>Typography</SidebarLinkButton></Link>
+        <Link style={linkStyle} to="/button-component"><SidebarLinkButton onClick={(e) => setOpen(false)}><FiAirplay style={margin}/>Button Component</SidebarLinkButton></Link>
+        <Link style={linkStyle} to="/card-component"><SidebarLinkButton onClick={(e) => setOpen(false)}><FiCreditCard style={margin}/>Card Component</SidebarLinkButton></Link>
     </>
   )
 }
