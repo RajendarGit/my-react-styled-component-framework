@@ -59,7 +59,7 @@ const dropdownToggle = () => setShowDropDown(!showDropdown);
 
           <Dropdown>
             <Button onClick={dropdownToggle} primary>Dropdown Button</Button>
-            {showDropdown ? <DropdownMenu>
+            {showDropdown ? <DropdownMenu Menu>
               <DropdownMenuLink onClick={dropdownToggle}>List One</DropdownMenuLink>
               <DropdownMenuLink onClick={dropdownToggle}>List Two</DropdownMenuLink>
               <DropdownMenuLink onClick={dropdownToggle}>List Three</DropdownMenuLink>
@@ -70,8 +70,8 @@ const dropdownToggle = () => setShowDropDown(!showDropdown);
 
           <Box style={style}>
               <Card lg dark>
-                <Head4>Helloo</Head4>
-                <Body2>
+                <Head4 white>Helloo</Head4>
+                <Body2 white>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, accusamus distinctio facilis labore delectus sequi libero reprehenderit dolore ducimus vel omnis dolorum fugit nesciunt ex minima odio quidem aspernatur explicabo?
                 </Body2>
               </Card>

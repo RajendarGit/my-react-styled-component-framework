@@ -8,7 +8,7 @@ export const DropdownMenu = styled.div`
     transform: translate3d(0px, 37px, 0px);
     right: auto;
     bottom: auto;
-    z-index: 1000;
+    z-index: 1;
     float: left;
     min-width: 10rem;
     padding: .5rem 0;

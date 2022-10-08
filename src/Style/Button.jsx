@@ -4,8 +4,8 @@ const CssBaseline = css`
     border: 1px solid;
     font-size: ${({theme}) => theme.fontSizes.xs};
     padding: .7rem 1.3rem;
-    background-color: ${({theme}) => theme.colors.dark};
-    border-color: ${({theme}) => theme.colors.dark};
+    background-color: ${({theme}) => theme.colors.xdark};
+    border-color: ${({theme}) => theme.colors.xdark};
     color: ${({theme}) => theme.colors.light};
     text-align: ${({theme}) => theme.alignments.center};
     display: inline-block;
@@ -13,31 +13,31 @@ const CssBaseline = css`
 `
 export const Button = styled.button`
     ${CssBaseline}
-    ${({roundedSmall}) => roundedSmall && css`
+    ${({radius}) => radius === 'sm' && css`
         border-radius: ${({theme}) => theme.borderRadius.radiusSmall};
     `}
-    ${({roundedMedium}) => roundedMedium && css`
+    ${({radius}) => radius === 'md' && css`
         border-radius: ${({theme}) => theme.borderRadius.radiusMedium};
     `}
-    ${({roundedLarge}) => roundedLarge && css`
+    ${({radius}) => radius === 'lg' && css`
         border-radius: ${({theme}) => theme.borderRadius.radiusLarge};
     `}
-    ${({primary}) => primary && css`
+    ${({variant}) => variant === 'primary' && css`
         ${CssBaseline}
         background-color: ${({theme}) => theme.mode === 'light' ? theme.colors.primary : theme.colors.xdark};
         border-color: ${({theme}) => theme.mode === 'light' ? theme.colors.primary : theme.colors.xdark};
     `}
-    ${({secondary}) => secondary && css`
+    ${({variant}) => variant === 'secondary' && css`
         ${CssBaseline}
         background-color: ${({theme}) => theme.colors.secondary};
         border-color: ${({theme}) => theme.colors.secondary};
     `}
-    ${({warning}) => warning && css`
+    ${({variant}) => variant === 'warning' && css`
         ${CssBaseline}
         background-color: ${({theme}) => theme.colors.warning};
         border-color: ${({theme}) => theme.colors.warning};
     `}
-    ${({danger}) => danger && css`
+    ${({variant}) => variant === 'danger' && css`
         ${CssBaseline}
         background-color: ${({theme}) => theme.colors.danger};
         border-color: ${({theme}) => theme.colors.danger};
