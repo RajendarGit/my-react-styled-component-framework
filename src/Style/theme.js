@@ -1,5 +1,5 @@
 export const theme = {
-    mode: 'dark',
+    mode: 'light',
     font: {
         head: 'Oswald, sans-serif',
         body: 'Roboto, sans-serif',

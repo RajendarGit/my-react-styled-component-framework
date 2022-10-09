@@ -7,7 +7,7 @@ const styleCard = {
   height: '100vh',
 }
 
-export const Sidebar = ({open, setOpen, color}) => {
+export const Sidebar = ({open, setOpen}) => {
   return (
     <>
     {open &&
@@ -15,7 +15,7 @@ export const Sidebar = ({open, setOpen, color}) => {
       <Card style={styleCard}>
         <ModalClose onClick={(e) => setOpen(false)}><FiX/></ModalClose>
         <CardContent>
-          <MenuContent open={open} setOpen={setOpen} color={color}/>
+          <MenuContent open={open} setOpen={setOpen}/>
         </CardContent>
       </Card>
     </Modal>

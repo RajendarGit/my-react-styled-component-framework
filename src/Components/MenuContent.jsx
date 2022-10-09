@@ -1,39 +1,27 @@
 import { FiAirplay, FiColumns, FiCreditCard, FiHome, FiType } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Button } from '../Style/Button';
 
-const SidebarLinkButton = styled(Button)`
+const SidebarLink = styled(Link)`
+  text-decoration: none;
   display: flex;
-  width: 100%;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  font-size: 1rem;
   padding: 1rem;
-  cursor: pointer;
-  &:hover {
-    background-color: ${({theme}) => theme.colors.dark};
-    color: ${({theme}) => theme.colors.light};
-  }
+  align-items: center;
+  color: ${({theme}) => theme.mode === 'dark' ? theme.colors.light : theme.colors.dark};
 `
-
-const linkStyle = {
-  textDecoration: 'none',
-}
 
 const margin = {
   marginRight: '.5rem',
 }
 
-export const MenuContent = ({open, setOpen, color, navmenu }) => {
+export const MenuContent = ({open, setOpen }) => {
   return (
     <>
-        <Link style={linkStyle} to="/"><SidebarLinkButton onClick={(e) => setOpen(false)}><FiHome style={margin}/>Home</SidebarLinkButton></Link>
-        <Link style={linkStyle} to="/typography-component"><SidebarLinkButton onClick={(e) => setOpen(false)}><FiType style={margin}/>Typography</SidebarLinkButton></Link>
-        <Link style={linkStyle} to="/button-component"><SidebarLinkButton onClick={(e) => setOpen(false)}><FiAirplay style={margin}/>Button Component</SidebarLinkButton></Link>
-        <Link style={linkStyle} to="/card-component"><SidebarLinkButton onClick={(e) => setOpen(false)}><FiCreditCard style={margin}/>Card Component</SidebarLinkButton></Link>
-        <Link style={linkStyle} to="/column-component"><SidebarLinkButton onClick={(e) => setOpen(false)}><FiColumns style={margin}/>Complex Column Component</SidebarLinkButton></Link>
+        <SidebarLink to="/" onClick={() => setOpen(false)}><FiHome style={margin}/>Home</SidebarLink>
+        <SidebarLink to="/typography-component" onClick={() => setOpen(false)}><FiType style={margin}/>Typography</SidebarLink>
+        <SidebarLink to="/button-component" onClick={() => setOpen(false)}><FiAirplay style={margin}/>Button Component</SidebarLink>
+        <SidebarLink to="/card-component" onClick={() => setOpen(false)}><FiCreditCard style={margin}/>Card Component</SidebarLink>
+        <SidebarLink to="/column-component" onClick={() => setOpen(false)}><FiColumns style={margin}/>Complex Column Component</SidebarLink>
     </>
   )
 }
