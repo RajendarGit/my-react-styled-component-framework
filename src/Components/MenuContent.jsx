@@ -1,4 +1,4 @@
-import { FiAirplay, FiCreditCard, FiHome, FiType } from 'react-icons/fi';
+import { FiAirplay, FiColumns, FiCreditCard, FiHome, FiType } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { Button } from '../Style/Button';
@@ -33,6 +33,7 @@ export const MenuContent = ({open, setOpen, color, navmenu }) => {
         <Link style={linkStyle} to="/typography-component"><SidebarLinkButton onClick={(e) => setOpen(false)}><FiType style={margin}/>Typography</SidebarLinkButton></Link>
         <Link style={linkStyle} to="/button-component"><SidebarLinkButton onClick={(e) => setOpen(false)}><FiAirplay style={margin}/>Button Component</SidebarLinkButton></Link>
         <Link style={linkStyle} to="/card-component"><SidebarLinkButton onClick={(e) => setOpen(false)}><FiCreditCard style={margin}/>Card Component</SidebarLinkButton></Link>
+        <Link style={linkStyle} to="/column-component"><SidebarLinkButton onClick={(e) => setOpen(false)}><FiColumns style={margin}/>Complex Column Component</SidebarLinkButton></Link>
     </>
   )
 }
