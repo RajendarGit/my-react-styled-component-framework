@@ -1,22 +1,22 @@
 import styled, { css } from "styled-components"
 
 const fontWeightVariant = css`
-    ${({fontWeight}) => fontWeight === 'bold' && css`
+    ${({fontWeight}) => fontWeight === '700' && css`
         font-weight: 700;
     `}
-    ${({fontWeight}) => fontWeight === 'semibold' && css`
+    ${({fontWeight}) => fontWeight === '600' && css`
         font-weight: 600;
     `}
-    ${({fontWeight}) => fontWeight === 'medium' && css`
+    ${({fontWeight}) => fontWeight === '500' && css`
         font-weight: 500;
     `}
-    ${({fontWeight}) => fontWeight === 'regular' && css`
+    ${({fontWeight}) => fontWeight === '400' && css`
         font-weight: 400;
     `}
-    ${({fontWeight}) => fontWeight === 'light' && css`
+    ${({fontWeight}) => fontWeight === '300' && css`
         font-weight: 300;
     `}
-    ${({fontWeight}) => fontWeight === 'extralight' && css`
+    ${({fontWeight}) => fontWeight === '200' && css`
         font-weight: 200;
     `}
 `
