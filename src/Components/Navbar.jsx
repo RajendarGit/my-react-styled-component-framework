@@ -4,7 +4,7 @@ import { Navigation, NavBar, NavItems, NavList, MobileMenu } from '../Style/Navi
 import { FiMaximize, FiMenu } from "react-icons/fi";
 import { Sidebar } from './Sidebar';
 import { useState } from 'react';
-import { MenuContent } from './MenuContent';
+import { NavBarMenu } from './MenuContent';
 
 const capture = {
   display: 'flex',
@@ -15,24 +15,24 @@ const space = {
   marginRight: '.5rem',
 }
 
-export const Navbar = ({navmenu}) => {
+export const Navbar = () => {
 
   const [open, setOpen] = useState(false);
   return (
     <>
-    <NavBar purple>
+    <NavBar variant="primary">
         <Container>
-          <Navigation items>
+          <Navigation items="items">
             <Logo>
                 <div style={capture}><FiMaximize style={space}/>BOX</div>
                 <div>Framework</div>
             </Logo>
-            <MobileMenu white hideMD onClick={(e) => setOpen(true)}>
+            <MobileMenu color="white" hide="lg" onClick={(e) => setOpen(true)}>
               <FiMenu/>
             </MobileMenu>
-            <NavItems hide showMD>
+            <NavItems hide="hide" show="lg">
                 <NavList>
-                  <MenuContent navmenu={navmenu}/>
+                  <NavBarMenu/>
                 </NavList>
             </NavItems>
           </Navigation>
