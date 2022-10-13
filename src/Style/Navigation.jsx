@@ -3,6 +3,11 @@ import styled, { css } from 'styled-components'
 export const NavBar = styled.div`
     background-color: ${({theme}) => theme.colors.secondary};
     color: ${({theme}) => theme.colors.light};
+    position: relative;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
     ${({variant}) => variant === 'primary' && css`
         background-color: ${({theme}) => theme.colors.primary};
     `}
@@ -21,9 +26,22 @@ export const NavBar = styled.div`
         border-bottom: 1px solid;
         border-color: ${({theme}) => theme.colors.secondary};
     `}
+    ${({position}) => position === 'fixed' && css`
+        position: fixed;
+    `}
+    ${({position}) => position === 'sticky' && css`
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    `}
+    ${({placement}) => placement === 'top' && css`
+        top: 0;
+    `}
+    ${({placement}) => placement === 'bottom' && css`
+        bottom: 0;
+    `}
 `
 export const Navigation = styled.nav`
-    height: 70px;
     ${({items}) => items === 'items' && css`
         display: flex;
         justify-content: space-between;

@@ -20,7 +20,7 @@ export const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-    <NavBar variant="primary">
+    <NavBar variant="primary" position="sticky">
         <Container>
           <Navigation items="items">
             <Logo>

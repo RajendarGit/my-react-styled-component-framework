@@ -6,18 +6,13 @@ import { CardComponent } from './Pages/CardComponent'
 import { ColumnComponent } from './Pages/ColumnComponent'
 import { Home } from './Pages/Home'
 import { TypographyComponent } from './Pages/TypographyComponent'
-import { Box } from './Style/Box'
-
-const padded = {
-  paddingTop: '2rem',
-  paddingBottom: '2rem',
-}
+import { Main } from './Style/Main'
 
 export const Frame = () => {
   return (
     <>
       <Navbar/>
-      <Box style={padded}>
+      <Main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/button-component" element={<ButtonComponent />} />
@@ -25,7 +20,7 @@ export const Frame = () => {
           <Route path="/typography-component" element={<TypographyComponent />} />
           <Route path="/column-component" element={<ColumnComponent />} />
         </Routes>
-      </Box>
+      </Main>
     </>
   )
 }
